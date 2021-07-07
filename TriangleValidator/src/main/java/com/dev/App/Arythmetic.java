@@ -10,4 +10,8 @@ public class Arythmetic{
 		return (b1 && b2 && b3) ? true : false;
 	};
 	
+	public static Validator areMultiplesOfFive = (int a, int b, int c) ->{
+		return (a%5 == 0 && b%5 == 0 && c%5 == 0);
+	};
+	
 }

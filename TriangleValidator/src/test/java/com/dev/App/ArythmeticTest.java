@@ -29,4 +29,26 @@ public class ArythmeticTest {
 		assertTrue(Arythmetic.triangleValidator.validate(a, b, c));
 	}
 	
+	@Test
+	void validMultiplesOfFive() {
+		//given
+		int a = 10;
+		int b = 15;
+		int c = 85;
+		
+		//then
+		assertTrue(Arythmetic.areMultiplesOfFive.validate(a, b, c));
+	}
+	
+	@Test
+	void invalidMultiplesOfFive() {
+		//given
+		int a = 10;
+		int b = 34;
+		int c = 85;
+		
+		//then
+		assertFalse(Arythmetic.areMultiplesOfFive.validate(a, b, c));
+	}
+	
 }
